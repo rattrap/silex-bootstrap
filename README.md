@@ -1,0 +1,1 @@
+## Silex app bootstrap
