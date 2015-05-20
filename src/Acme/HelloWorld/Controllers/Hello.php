@@ -4,21 +4,10 @@ namespace Acme\HelloWorld\Controllers;
 
 use Silex\Application;
 
-class Hello
+use Acme\Base\Controller;
+
+class Hello extends Controller
 {
-
-    /**
-     * @var Application $app
-     */
-    protected $app;
-
-    /**
-     * @param Application $app
-     */
-    public function __construct(Application $app)
-    {
-        $this->app = $app;
-    }
 
     public function index($name)
     {
