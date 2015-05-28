@@ -4,7 +4,7 @@ namespace Acme\Base;
 
 use Silex\Application;
 
-class Service
+abstract class Service
 {
 
     /**
@@ -19,5 +19,7 @@ class Service
     {
         $this->app = $app;
     }
+
+    abstract public function execute();
 
 }
